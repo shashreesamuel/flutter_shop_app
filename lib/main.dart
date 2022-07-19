@@ -5,7 +5,6 @@ void main() {
   runApp(const MyApp());
 }
 
-
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -19,9 +18,6 @@ class MyApp extends StatelessWidget {
       home: MyHomePage(),
     );
   }
-}
-
-class StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
@@ -97,16 +93,32 @@ class MyHomePage extends StatelessWidget {
                       padding: const EdgeInsets.all(16.0),
                       child: Container(
                           child: ClipRRect(
-                              borderRadius: BorderRadius.all(
-                                  Radius.circular(12),
-                                  NetworkImage(
-                                      'https://images.unsplash.com/photo-1473968512647-3e447244af8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')))),
+                            borderRadius: BorderRadius.all(Radius.circular(12)),
+                            child: Image.network(
+                                'https://images.unsplash.com/photo-1473968512647-3e447244af8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
+                            ),
+                          )
+                      ),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(16.0),
                       child: Container(
-                          child: Image.network(
-                              'https://images.unsplash.com/photo-1473968512647-3e447244af8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.all(Radius.circular(12)),
+                            child: Image.network(
+                                'https://images.unsplash.com/photo-1508444845599-5c89863b1c44?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80'
+                            ),
+                          )
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Container(
+                          child: ClipRRect(
+                        borderRadius: BorderRadius.all(Radius.circular(12)),
+                        child: Image.network(
+                            'https://images.unsplash.com/photo-1479152471347-3f2e62a2b2a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1348&q=80'),
+                      )),
                     )
                   ],
                 ),
